@@ -1,0 +1,77 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulário de Inscrição</title>
+
+</head>
+<body>
+    <form method="POST" action="http://localhost:8080/form">
+        
+        <fieldset>             
+                <legend>Primeiro, escolha qual serviço quer fazer:</legend>
+                <input type="radio" name="servico" value="marketing">Marketing</input><br>
+                <input type="radio" name="servico" value="administracao">Administração</input><br>
+                <input type="radio" name="servico" value="empreededorismo">Empreendedorismo</input>
+       </fieldset>
+       <br><br>
+            <fieldset>             
+                <legend>Conte-nos um pouco sobre você</legend>
+                <br>
+                <label for="NomeDoUsuario">Nome:</label>
+                <input id="NomeDoUsuario" type="text" placeholder="Digite Seu Nome" name="NomeDoUsuario" required>
+                <label for="Sobrenome">Sobrenome:</label>
+                <input type="text" name="Sobrenome" id="Sobrnome" placeholder="Digite Seu Sobrenome" required>
+                <br><br>
+                <fieldset style="padding:10px">
+                    <legend>Escolha seu Gênero</legend>
+                    <input type="radio" name="genero" value="Masculino">Masculino</input>
+                    <input type="radio" name="genero" value="Feminino">Feminino</input>
+                    <input type="radio" name="genero" value="Nao Informar" checked>Prefiro Não Informar</input>
+                </fieldset>
+                <br><br>
+                <fieldset style="padding:10px">
+                    <legend>Escolha seu país de origem:</legend>
+                    <select name="PaisDeOrigem">
+                        <option value="Brasil">Brasil</option>
+                        <option value="Estados Unidos">Estados Unidos</option>
+                        <option value="Canadá">Canadá</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Inglaterra">Inglaterra</option>
+                        <option value="Alemanha">Alemanha</option>
+                    </select>
+                </fieldset>
+                <br><br>
+                <fieldset>
+                    <legend>Informações adicionais:</legend>
+                    <label for="telefone">Digite seu número de Telefone:</label>
+                    <input type="text" name:"Telefone" id="telefone" placeholder="(DDD)999994444" required>
+                    <br>
+                    <label for="email">Digite seu e-mail:</label>
+                    <input id="email" type="e-mail" name="e-mail" placeholder="digite.aqui@seu.email" required>
+                    <br>
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="Endereco" id="endereco" placeholder="Opcional">
+                </fieldset>
+
+            </fieldset>
+            <br><br>
+            <fieldset>
+                        <legend>Crie uma conta:</legend>
+                        <label for="datadenascimento">Data de nascimento:</label>
+                        <input id="datadenascimento" type="date" name="DataDeNascimento" required>
+                        <br><br>
+                        <fieldset>
+                            <legend>Prove que você não é um robô:</legend>
+                            <input type="checkbox" name="NaoSouUmRobo" value="confirmed" required>Eu não sou um robô</input>
+                        </fieldset>
+                        <br>
+                        <label for="CodigoSeguranca">Código de Segurança:</label>
+                        <input id="CodigoSeguranca" type="text" placeholder="Digite Seu Código de Segurança" name="Seguranca" required>
+                        <br><br>
+                        <input type="reset" value="Apagar dados cadastrados">
+                        <input type="submit" value="Login">
+                    </fieldset>
+</form>
+</body>
+</html>
