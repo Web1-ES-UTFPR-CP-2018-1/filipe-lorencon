@@ -7,106 +7,179 @@
     <meta name="generator" content="Visual Studio Code">
     <meta name="Keywords" content="Engenharia de Software,UTFPR,Cornélio Procópio,CP">
     <meta name="description" content="Site Relacionado ao Curso de Engenharia de Software da UTFPR-CP">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    
+</head>
 <body>
-    <style>
-        ul{
-            margin: 0px; padding: 0px;
-        }
-        li{
-            list-style: none;
-            display: inline-block;
-        }
-        li a {
-                        text-decoration: none;
-            background-color:black;
-            margin-bottom: 1px;
-            padding: 8px 14px;
-            color: white;
-        }
-        li a:hover {
-            background-color: darkslategray;
-        }
-    </style>
-    <header id="top" >
-        <img src="logo software.jpg" alt="Logo de Engenharia de Software" height="300" width="1280">
-    </header>
-    <nav style="background-color:black ; color:white;padding:50px">
-        <!-- Colocar o Logo do Curso de Engenharia de Software do lado esquerdo a barra de navegação a direita-->
-        <ul>
-            <li> <a href="#Home">Home</a> </li>
-            <li> <a href="#Quem">Quem Somos</a> </li>      
-            <li> <a href="#Oque">O que é?</a> </li>
-            <li> <a href="#Curso">Curso</a> </li>
-            <li> <a href="#Perfil">Perfil de Egresso</a> </li>
-            <li> <a href="#Mercado">Mercado de Trabalho</a> </li>
-  
-        </ul>
+    <div id="top">
+        <img src="imagens\logo software.jpg" alt="Logo de Engenharia de Software" style="width: 100%">
+    </div>
+    <!-- Navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark" style="background-color: #002761">
+        <div class="container">
+                <a class="navbar-brand text-light" href="#top"><b>TOP</b></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                          
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Quem"><b>Quem Somos</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Oque"><b>O que é?</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Curso"><b>Curso</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Perfil"><b>Perfil de Egresso</b></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#Mercado"><b>Marcado de Trabalho</b></a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
     </nav>
-    <section id="Home" style="background-color:gold;padding:50px">
-        <h2>Home</h2>
-        <!-- Fazer uma breve introdução -->
-        <p>O objetivo deste website é apresentar o que é engenharia de software, bem como 
-            o curso na nossa universidade (UTFPR-CP) e o mercado que envolve esta área. </p>
-        <a href="#top">Top</a>
+    <!-- Quem somos nós -->
+    <section id="Quem" style="background-color:#E6ED13; padding: 5%">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-6" style="margin-top: 5%">
+                <h2>Quem Somos nós</h2>
+                <!-- Fazer uma introdução em relação a Universidade, comentando sobre os benefícios de se estudar aqui -->
+                <p>A UTFPR oferece gratuitamente cursos Técnicos, de Graduação, Mestrado Acadêmico, 
+                    Mestrado Profissional e Doutorado nos treze câmpus. Também são ofertados cursos 
+                    de especialização a mensalidades mais acessíveis. </p>
+                <p>A Universidade oferece um ambiente de estudos 24 horas, permitindo que todos os
+                    estudantes possam ter um ambiente tranquilo para seus estudos durante as longas
+                    madrugadas de estudos.</p>
+                    <br>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5">
+                    <div id="carouselExampleIndicators rounded" class="carousel slide rounded" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img class="d-block w-100" src="imagens/utfpr_capa_cn.jpg" alt="Entrada principal">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="imagens/anfiteatro.jpg" alt="Anfiteatro">
+                              </div>
+                              <div class="carousel-item">
+                                <img class="d-block w-100" src="imagens/Quadra.jpg" alt="Quadra Poliesportiva">
+                              </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </a>
+                          </div>
+            </div>
+        </div>
+    </div>
     </section>
-    <section id="Quem" style="background-color:black ; color:white;padding:50px">
-        <h2>Quem Somos nós</h2>
-        <!-- Fazer uma introdução em relação a Universidade, comentando sobre os benefícios de se estudar aqui -->
-        <p>A UTFPR oferece gratuitamente cursos Técnicos, de Graduação, Mestrado Acadêmico, 
-            Mestrado Profissional e Doutorado nos treze câmpus. Também são ofertados cursos 
-            de especialização a mensalidades mais acessíveis. </p>
-        <p>A Universidade oferece um ambiente de estudos 24 horas, permitindo que todos os
-             estudantes possam ter um ambiente tranquilo para seus estudos durante as longas
-              madrugadas de estudos.</p>
-        <a href="#top">Top</a>
-    </section>
-    <section id="Oque" style="background-color:gold;padding:50px">
-            <h2>O que é Engenharia de Software?</h2>
-            <!-- Fazer uma breve explicação do que é o curso de engenharia de software -->
-            <p>Antes de qualquer coisa, precisamos explicar o que é a Engenharia de Software para 
-                você entender melhor.</p>
-            <p>Engenharia de Software é uma área focada no desenvolvimento de softwares e programas
-                 que envolvem tecnologia.</p>
-            <p>Portanto, os engenheiros dessa área são responsáveis por criar plataformas digitais, 
-                jogos, aplicativos e sistemas específicos.</p>
-            <p>Quando desenvolvem esses sistemas específicos, por exemplo, o objetivo é aumentar a 
-                produtividade e o desempenho de uma determinada área ou empresa, como é o caso dos 
-                bancos e consultórios médicos.</p>
-            <a href="#top">Top</a>
+    <!-- O que é o curso de Engenharia de Software -->
+    <section id="Oque" style="background-color:gold;padding: 5%">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="imagens/Logo-ES-Fundo-branco.png" alt="Logo de engenharia de Software" width="100%">
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-6">
+                            <h2>O que é Engenharia de Software?</h2>
+                            <!-- Fazer uma breve explicação do que é o curso de engenharia de software -->
+                            <p>Antes de qualquer coisa, precisamos explicar o que é a Engenharia de Software para 
+                                você entender melhor.</p>
+                            <p>Engenharia de Software é uma área focada no desenvolvimento de softwares e programas
+                                 que envolvem tecnologia.</p>
+                            <p>Portanto, os engenheiros dessa área são responsáveis por criar plataformas digitais, 
+                                jogos, aplicativos e sistemas específicos.</p>
+                            <p>Quando desenvolvem esses sistemas específicos, por exemplo, o objetivo é aumentar a 
+                                produtividade e o desempenho de uma determinada área ou empresa, como é o caso dos 
+                                bancos e consultórios médicos.</p>
+                    </div>
+                </div>
+            </div>
         </section>
-    <section id="Curso" style="background-color:black ; color:white;padding:50px">
-        <h2>Curso</h2>
-        <!-- Comentar sobre o curso de engenharia de Software UTFPR-CP -->
-        <p>O curso de Bacharelado em Engenharia de Software teve início em 2014/2.</p> 
-        <p>O objetivo do curso é formar profissionais que sejam capazes de conduzir atividades de 
-            construção, planejamento, gerenciamento de recursos, gestão de qualidade e manutenção de 
-            produtos de software.</p>
-        <p>Isso significa que o engenheiro de software deve ser capaz de realizar 
-            todas as atividades envolvidas em um processo de produção de software, sendo elas a concepção 
-            do projeto, a elicitação de requisitos, a implementação e teste de software e, por fim, a 
-            manutenção.</p>
-        <a href="#top">Top</a>
+        <!-- Curso -->
+    <section id="Curso" style="background-color:#E6ED13;padding: 5%">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-6">
+                <h2>Curso</h2>
+                <!-- Comentar sobre o curso de engenharia de Software UTFPR-CP -->
+                <p>O curso de Bacharelado em Engenharia de Software teve início em 2014/2.</p> 
+                <p>O objetivo do curso é formar profissionais que sejam capazes de conduzir atividades de 
+                    construção, planejamento, gerenciamento de recursos, gestão de qualidade e manutenção de 
+                    produtos de software.</p>
+                <p>Isso significa que o engenheiro de software deve ser capaz de realizar 
+                    todas as atividades envolvidas em um processo de produção de software, sendo elas a concepção 
+                    do projeto, a elicitação de requisitos, a implementação e teste de software e, por fim, a 
+                    manutenção.</p>
+               </div>
+               <div class="col-md-1"></div>
+               <div class="col-md-5" style="margin-top: 5%">
+                <img src="imagens\logo software.jpg" alt="Logo de Engenharia de Software" style="width: 100%">
+               </div>
+           </div>
+       </div>
     </section>
+    <!-- Perfil de Egresso -->
     <section id="Perfil" style="background-color:gold ;padding:50px">
-            <h2>Perfil de Egresso:</h2>
-            <!-- Comentar sobre o curso de engenharia de Software UTFPR-CP -->
-            <p>O egresso do curso de Bacharelado em Engenharia de Software deve:</p> 
-            <p>- Elicitar, analisar, modelar, especificar (documentar), validar e gerenciar 
-                    requisitos de software;</p>
-            <p>- Projetar software (arquitetura e projeto detalhado) e realizar modelagem, 
-                    análise e avaliação da qualidade considerando métodos, modelos arquiteturais e 
-                    padrões de projeto nestas atividades do processo;</p>
-            <p>- Programar com qualidade e em equipe. Inclui métodos, técnicas, tecnologias e 
-                    ferramentas;</p>
-            <p>- Manter o software para que evolua qualitativamente;</p>
-            <p>- Planejar e executar de verificação, validação, revisões, inspeções e testes;</p> 
-            <p>- Gerenciar projetos de software;</p>
-            <p>- Customizar processos de software e contribuir com projetos de melhoria de processos;</p>
-            <p>- Transmitir ideias com clareza na forma verbal ou escrita;</p>
-            <p>- Exercitar o conhecimento por meio do emprego de tecnologias, ferramentas e métodos;</p>
-            <p>- Selecionar tecnologias apropriadas para um contexto específico de desenvolvimento de software.</p>
-            <a href="#top">Top</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <img src="imagens/people-2388575_960_720.png" alt="" style="width: 100%">
+                    <img src="imagens/people-2388584_960_720.png" alt="" style="width: 100%">
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6" style="margin-top: 7%">
+                    <h2>Perfil de Egresso:</h2>
+                    <!-- Comentar sobre o curso de engenharia de Software UTFPR-CP -->
+                    <p>O egresso do curso de Bacharelado em Engenharia de Software deve:</p> 
+                    <p>- Elicitar, analisar, modelar, especificar (documentar), validar e gerenciar 
+                            requisitos de software;</p>
+                    <p>- Projetar software (arquitetura e projeto detalhado) e realizar modelagem, 
+                            análise e avaliação da qualidade considerando métodos, modelos arquiteturais e 
+                            padrões de projeto nestas atividades do processo;</p>
+                    <p>- Programar com qualidade e em equipe. Inclui métodos, técnicas, tecnologias e 
+                            ferramentas;</p>
+                    <p>- Manter o software para que evolua qualitativamente;</p>
+                    <p>- Planejar e executar de verificação, validação, revisões, inspeções e testes;</p> 
+                    <p>- Gerenciar projetos de software;</p>
+                    <p>- Customizar processos de software e contribuir com projetos de melhoria de processos;</p>
+                    <p>- Transmitir ideias com clareza na forma verbal ou escrita;</p>
+                    <p>- Exercitar o conhecimento por meio do emprego de tecnologias, ferramentas e métodos;</p>
+                    <p>- Selecionar tecnologias apropriadas para um contexto específico de desenvolvimento de software.</p>
+                </div>
+            </div>
+        </div>
         </section>
+    <!-- Mercado de Trabalho -->
     <section id="Mercado" style="background-color:black ; color:white;padding:50px">
         <h2>Como está o Mercado de Trabalho?</h2>
         <!-- Fazer uma introdução de como está o mercado de trabalho para Engenharia de Software -->
@@ -118,7 +191,6 @@
             o inglês ou a língua de origem do país escolhido.</p>
         <p>Então, pode ter certeza que, cursando Engenharia de Software conosco e 
             fazendo cursos extracurriculares, sua carreira tem tudo para dar certo.</p>
-        <a href="#top">Top</a>
         </section>
     <footer>
         <!-- Logo da UTFPR -->
